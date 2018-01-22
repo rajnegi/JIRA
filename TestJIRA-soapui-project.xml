@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="ac9c7525-cfa7-4fb2-9353-e8f36e244a9e" activeEnvironment="Default" name="JIRA TestCase Execution using ZAPI" resourceRoot="" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="b0376303-693a-4e12-8e83-ca206e21c13e" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://prod-api.zephyr4jiracloud.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://prod-api.zephyr4jiracloud.com</con:endpoint></con:endpoints><con:resource name="" path="/connect/public/rest/api/1.0/executions/add/cycle/${#Project#cycleid}" id="6c0f4ffb-8065-4035-9714-402093965005"><con:settings/><con:parameters/><con:method name="1" id="ff742311-1ecd-429c-a08a-8d05c90969b5" method="POST"><con:settings/><con:parameters><con:parameter><con:name>Content-Type</con:name><con:value>application/json</con:value><con:style>HEADER</con:style><con:default>application/json</con:default><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>Authorization</con:name><con:value>JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInFzaCI6IjQ2ZDU0YzdmMjkwZWJlNDM4OTU2OTNiNWNmYWVkZDIwMGJiODFjNDE1ZTZiMzRhM2Q0MTcxNjk3ZjkwODQ0NWQiLCJpc3MiOiJaR0l4WTJNMVpEZ3RaVE15Tnkwek5tWTRMVGxoWlRrdFltWTNNR1ZpWmpFNVl6TTBJR0ZrYldsdUlHRmtiV2x1IiwiZXhwIjoxNTE2Mjk3NjEyLCJpYXQiOjE1MTYyOTQwMTJ9.Qd_a4EGs-MKwypNl--H4272HbyM-JtkBepw_ih0knrA</con:value><con:style>HEADER</con:style><con:default>JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInFzaCI6IjQ2ZDU0YzdmMjkwZWJlNDM4OTU2OTNiNWNmYWVkZDIwMGJiODFjNDE1ZTZiMzRhM2Q0MTcxNjk3ZjkwODQ0NWQiLCJpc3MiOiJaR0l4WTJNMVpEZ3RaVE15Tnkwek5tWTRMVGxoWlRrdFltWTNNR1ZpWmpFNVl6TTBJR0ZrYldsdUlHRmtiV2x1IiwiZXhwIjoxNTE2Mjk3NjEyLCJpYXQiOjE1MTYyOTQwMTJ9.Qd_a4EGs-MKwypNl--H4272HbyM-JtkBepw_ih0knrA</con:default><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>zapiAccessKey</con:name><con:value>ZGIxY2M1ZDgtZTMyNy0zNmY4LTlhZTktYmY3MGViZjE5YzM0IGFkbWluIGFkbWlu</con:value><con:style>HEADER</con:style><con:default>ZGIxY2M1ZDgtZTMyNy0zNmY4LTlhZTktYmY3MGViZjE5YzM0IGFkbWluIGFkbWlu</con:default><con:description xsi:nil="true"/></con:parameter></con:parameters><con:representation type="RESPONSE"><con:mediaType>text/plain;charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>text/plain;charset=utf-8</con:mediaType><con:status>401</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="01d5eea6-19bb-4a16-9c84-16bd3684628e" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://prod-api.zephyr4jiracloud.com/</con:endpoint><con:request>{
+	"projectId":10000,
+	"versionId":-1,
+	"issues":["NS-3"],
+	"method":"1"
+}</con:request><con:originalUri>https://prod-api.zephyr4jiracloud.com/connect/public/rest/api/1.0/executions/add/cycle/0001516290602659-242ac112-0001</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="Authorization" value="JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInFzaCI6IjQ2ZDU0YzdmMjkwZWJlNDM4OTU2OTNiNWNmYWVkZDIwMGJiODFjNDE1ZTZiMzRhM2Q0MTcxNjk3ZjkwODQ0NWQiLCJpc3MiOiJaR0l4WTJNMVpEZ3RaVE15Tnkwek5tWTRMVGxoWlRrdFltWTNNR1ZpWmpFNVl6TTBJR0ZrYldsdUlHRmtiV2x1IiwiZXhwIjoxNTE2MzAxMzQ1LCJpYXQiOjE1MTYyOTc3NDV9.PQLN6H47gJFZ5_AGhuludFHQ1XyUj9rm6_pjWN9jK8U" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>Content-Type</con:entry><con:entry>Authorization</con:entry><con:entry>zapiAccessKey</con:entry></con:parameterOrder></con:request></con:method></con:resource><con:resource name="${" path="/connect/public/rest/api/1.0/execution/${#Project#executionid}" id="7ac6a44a-4ce8-4c52-876b-81f655e7861e"><con:settings/><con:parameters/><con:method name="Method 1" id="b03cf640-932b-4ded-b30c-d3ba91be0bc4" method="PUT"><con:settings/><con:parameters><con:parameter><con:name>Content-Type</con:name><con:value>application/json</con:value><con:style>HEADER</con:style><con:default>application/json</con:default><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>Authorization</con:name><con:value>JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInFzaCI6ImY5Mjk2NWZjMWEyNTdlNmQwZWU2YzAxZTY1NWYxOTVkZDA3ZDlmYjBhZmEwZTNhYTg1ZDI0YjZlM2VhOTE5YWMiLCJpc3MiOiJaR0l4WTJNMVpEZ3RaVE15Tnkwek5tWTRMVGxoWlRrdFltWTNNR1ZpWmpFNVl6TTBJR0ZrYldsdUlHRmtiV2x1IiwiZXhwIjoxNTE2MzA4MzgwLCJpYXQiOjE1MTYzMDQ3ODB9.l33DnzePLqLsKy_z3N01lUcDknGkjK6O9n3Iff1LMRI</con:value><con:style>HEADER</con:style><con:default>JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInFzaCI6ImY5Mjk2NWZjMWEyNTdlNmQwZWU2YzAxZTY1NWYxOTVkZDA3ZDlmYjBhZmEwZTNhYTg1ZDI0YjZlM2VhOTE5YWMiLCJpc3MiOiJaR0l4WTJNMVpEZ3RaVE15Tnkwek5tWTRMVGxoWlRrdFltWTNNR1ZpWmpFNVl6TTBJR0ZrYldsdUlHRmtiV2x1IiwiZXhwIjoxNTE2MzA4MzgwLCJpYXQiOjE1MTYzMDQ3ODB9.l33DnzePLqLsKy_z3N01lUcDknGkjK6O9n3Iff1LMRI</con:default><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>zapiAccessKey</con:name><con:value>ZGIxY2M1ZDgtZTMyNy0zNmY4LTlhZTktYmY3MGViZjE5YzM0IGFkbWluIGFkbWlu</con:value><con:style>HEADER</con:style><con:default>ZGIxY2M1ZDgtZTMyNy0zNmY4LTlhZTktYmY3MGViZjE5YzM0IGFkbWluIGFkbWlu</con:default><con:description xsi:nil="true"/></con:parameter></con:parameters><con:representation type="FAULT"><con:mediaType>text/plain;charset=utf-8</con:mediaType><con:status>401</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ac1="https://prod-api.zephyr4jiracloud.com/connect/public/rest/api/1.0/execution/0001516298420566-242ac112-0001">ac1:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json;charset=utf-8</con:mediaType><con:status>400</con:status><con:params/><con:element xmlns:ac1="https://prod-api.zephyr4jiracloud.com/connect/public/rest/api/1.0/execution/0001516298420566-242ac112-0001">ac1:Fault</con:element></con:representation><con:request name="Request 1" id="182d8512-97bb-486e-b49b-a27ea9bb3053" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://prod-api.zephyr4jiracloud.com</con:endpoint><con:request>{
+	"status":{"id":"${#Project#Status}"},
+	"projectId":${#Project#projectId},
+	"issueId":${#Project#issueID},
+	"cycleId":"${#Project#cycleid}",
+	"versionId":${#Project#versionId},
+	"comment":"Test Execution Done.",
+	"assigneeType":"currentUser"
+}</con:request><con:originalUri>https://prod-api.zephyr4jiracloud.com/connect/public/rest/api/1.0/execution/0001516298420566-242ac112-0001</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="Authorization" value="${#Project#JWT_Token}"/>
+  <con:entry key="zapiAccessKey" value="${#Project#zapiAccessKey}"/>
+</con:parameters><con:parameterOrder><con:entry>Content-Type</con:entry><con:entry>Authorization</con:entry><con:entry>zapiAccessKey</con:entry></con:parameterOrder></con:request></con:method></con:resource><con:resource name="cycle" path="/connect/public/rest/api/1.0/cycle" id="885f65d7-b86c-423a-9480-ef0464319632"><con:settings/><con:parameters/><con:method name="Method 1" id="b02e9f90-d3ff-477d-bc1b-3a5db01fa128" method="POST"><con:settings/><con:parameters><con:parameter><con:name>Authorization</con:name><con:value>${#Project#JWT_Token}</con:value><con:style>HEADER</con:style><con:default>${#Project#JWT_Token}</con:default><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>zapiAccessKey</con:name><con:value>${#Project#zapiAccessKey}</con:value><con:style>HEADER</con:style><con:default>${#Project#zapiAccessKey}</con:default><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>Content-Type</con:name><con:value>application/json</con:value><con:style>HEADER</con:style><con:default>application/json</con:default><con:description xsi:nil="true"/></con:parameter></con:parameters><con:representation type="FAULT"><con:mediaType>text/plain;charset=utf-8</con:mediaType><con:status>401</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="Request 1" id="5ad45c87-b562-40af-98b5-5fbc83b5a728" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://prod-api.zephyr4jiracloud.com</con:endpoint><con:request>{
+"name":"${Project#TestCycleName}",
+"build":"${Project#BuildNumber}",
+"environment":"${Project#EnvironmentName}",
+"description":"This is automated cycle created using zephyr API. Test cases will be added in this cycle as it is going to execute in Web or API Automation Suite. Also testcases will be executed on the basis of result coming from Automation suite.",
+"startDate":"${Project#currentDate}",
+"endDate":"${Project#currentDate}",
+"projectId":${Project#projectId},
+"versionId":${Project#versionId}
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>Authorization</con:entry><con:entry>zapiAccessKey</con:entry><con:entry>Content-Type</con:entry></con:parameterOrder></con:request></con:method></con:resource><con:resource name="NS-3" path="/rest/api/latest/issue/${#Project#issues}" id="e2d2c97c-12b6-4a78-805d-895bea9c183f"><con:settings/><con:parameters/><con:method name="Method 1" id="811c7c77-110b-4586-9d72-ee9110bb6a74" method="GET"><con:settings/><con:parameters><con:parameter><con:name>Content-Type</con:name><con:value>application/json</con:value><con:style>HEADER</con:style><con:default>application/json</con:default><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>Authorization</con:name><con:value>Basic bWlzaHJhNzdzaHViaEBnbWFpbC5jb206QXBwbGVAMTIz</con:value><con:style>HEADER</con:style><con:default>Basic bWlzaHJhNzdzaHViaEBnbWFpbC5jb206QXBwbGVAMTIz</con:default><con:description xsi:nil="true"/></con:parameter></con:parameters><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ns="https://prod-api.zephyr4jiracloud.com/rest/api/latest/issue/NS-3">ns:Response</con:element></con:representation><con:request name="Request 1" id="a4391818-75a5-4f5f-8526-78582f6c45c9" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://newapi.atlassian.net</con:endpoint><con:request/><con:originalUri>https://prod-api.zephyr4jiracloud.com/rest/api/latest/issue/NS-3</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>Content-Type</con:entry><con:entry>Authorization</con:entry></con:parameterOrder></con:request></con:method></con:resource><con:resource name="execution" path="/connect/public/rest/api/1.0/execution" id="9dacf374-db70-477c-9565-47d147264924"><con:settings/><con:parameters/><con:method name="Method 1" id="b849788c-24ae-4ae6-9c62-db5415406729" method="POST"><con:settings/><con:parameters><con:parameter><con:name>Authorization</con:name><con:value>${#Project#JWT_Token}</con:value><con:style>HEADER</con:style><con:default>${#Project#JWT_Token}</con:default><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>zapiAccessKey</con:name><con:value>${#Project#zapiAccessKey}</con:value><con:style>HEADER</con:style><con:default>${#Project#zapiAccessKey}</con:default><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>Content-Type</con:name><con:value>application/json</con:value><con:style>HEADER</con:style><con:default>application/json</con:default><con:description xsi:nil="true"/></con:parameter></con:parameters><con:representation type="FAULT"><con:mediaType>application/json;charset=utf-8</con:mediaType><con:status>400</con:status><con:params/><con:element xmlns:exec="https://prod-api.zephyr4jiracloud.com/connect/public/rest/api/1.0/execution">exec:Fault</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:exec="https://prod-api.zephyr4jiracloud.com/connect/public/rest/api/1.0/execution">exec:Response</con:element></con:representation><con:request name="Request 1" id="04089324-5684-4016-9bc2-1d31e8e95842" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://prod-api.zephyr4jiracloud.com</con:endpoint><con:request>{
+	"status":{"id":"${#Project#Status}"},
+	"projectId":${#Project#projectId},
+	"issueId":${#Project#issueID},
+	"versionId":${#Project#versionId},
+	"cycleId":"${#Project#cycleid}",
+	"assigneeType":"currentUser"
+}</con:request><con:originalUri>https://prod-api.zephyr4jiracloud.com/connect/public/rest/api/1.0/execution</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>Authorization</con:entry><con:entry>zapiAccessKey</con:entry><con:entry>Content-Type</con:entry></con:parameterOrder></con:request></con:method></con:resource><con:resource name="" path="/api/systeminfo" id="13a61ed9-5f94-46e6-83a1-b12e5546199d"><con:settings/><con:parameters/><con:method name="Method 1" id="32504c25-1bb8-46a4-9550-9dc00d6ab403" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:sys="https://qa.condecodev.com/api/systeminfo">sys:Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element xmlns:sys="https://qa.condecodev.com/api/systeminfo">sys:Fault</con:element></con:representation><con:request name="Request 1" id="031daff4-c6e9-433f-bb31-4790a243fddc" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://qa.condecodev.com</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="Copy of info" path="/api/systeminfo1" id="13a61ed9-5f94-46e6-83a1-b12e5546199d"><con:settings/><con:parameters/><con:method name="Method 1" id="32504c25-1bb8-46a4-9550-9dc00d6ab403" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:sys="https://qa.condecodev.com/api/systeminfo">sys:Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element xmlns:sys="https://qa.condecodev.com/api/systeminfo1">sys:Fault</con:element></con:representation><con:request name="Request 1" id="031daff4-c6e9-433f-bb31-4790a243fddc" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://qa.condecodev.com</con:endpoint><con:request/><con:originalUri>https://qa.condecodev.com/api/systeminfo1</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="9ed649dc-b881-4ec8-b6c2-8f8a02b64dcd" name="TestSuite 1" disabled="true"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="5701247b-46ea-4062-ac5c-b516088a678b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Create Cycle in JIRA" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Generate JWT Token for Create Cycle." id="434bbf40-4b70-443b-90f3-cbbdeca6b298"><con:settings/><con:config><script>		import java.io.IOException;
+		import java.io.UnsupportedEncodingException;
+		import java.net.URI;
+		import java.net.URISyntaxException;
+		
+		import org.apache.http.HttpEntity;
+		import org.apache.http.HttpResponse;
+		import org.apache.http.ParseException;
+		import org.apache.http.client.ClientProtocolException;
+		import org.apache.http.client.HttpClient;
+		import org.apache.http.client.methods.HttpGet;
+		import org.apache.http.entity.StringEntity;
+		import org.apache.http.impl.client.DefaultHttpClient;
+		import org.apache.http.util.EntityUtils;
+		
+		import com.thed.zephyr.cloud.rest.ZFJCloudRestClient;
+		import com.thed.zephyr.cloud.rest.client.JwtGenerator;
+		
+		def site = context.expand( '${#Project#Site}' )
+		def zapiAccessKey = context.expand( '${#Project#zapiAccessKey}' )
+		def secretID = context.expand( '${#Project#secretID}' )
+		def user = context.expand( '${#Project#user}' )
+
+            // Replace Zephyr BaseUrl with the &lt;ZAPI_CLOUD_URL> shared with ZAPI Cloud Installation
+            String zephyrBaseUrl = site;
+            // zephyr accessKey , we can get from Addons >> zapi section
+            String accessKey = zapiAccessKey;
+            // zephyr secretKey , we can get from Addons >> zapi section
+            String secretKey = secretID;
+            // Jira UserName
+            String userName = user;
+            
+            ZFJCloudRestClient client = ZFJCloudRestClient.restBuilder(zephyrBaseUrl, accessKey, secretKey, userName).build();
+            JwtGenerator jwtGenerator = client.getJwtGenerator();
+         
+            // API to which the JWT token has to be generated
+            String createCycleUri = zephyrBaseUrl + "/public/rest/api/1.0/cycle";
+        
+            URI uri = new URI(createCycleUri);
+            
+            int expirationInSec = 3600;
+            String jwt = jwtGenerator.generateJWT("POST", uri, expirationInSec);
+
+       	  log.info "JWT Token : " + jwt
+
+       	  //Store token in property.
+       	  context.testCase.testSuite.project.setPropertyValue('JWT_Token', jwt)
+ 
+</script></con:config></con:testStep><con:testStep type="groovy" name="Add date in milliseconds." id="ad05ff42-e9da-4e98-805d-a560385e2330"><con:settings/><con:config><script>def date = new Date()
+log.info date.getTime()
+context.testCase.testSuite.project.setPropertyValue('currentDate', date.getTime().toString())</script></con:config></con:testStep><con:testStep type="restrequest" name="Create cycle in JIRA" id="60f4d22d-9bda-4070-9684-586159b285a9"><con:settings/><con:config service="https://prod-api.zephyr4jiracloud.com" resourcePath="/connect/public/rest/api/1.0/cycle" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Create cycle in JIRA" id="5ad45c87-b562-40af-98b5-5fbc83b5a728" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://prod-api.zephyr4jiracloud.com</con:endpoint><con:request>{
+"name":"${#Project#TestCycleName}",
+"build":"${#Project#BuildNumber}",
+"environment":"${#Project#EnvironmentName}",
+"description":"This is automated cycle created using zephyr API. Test cases will be added in this cycle as it is going to execute in Web or API Automation Suite. Also testcases will be executed on the basis of result coming from Automation suite.",
+"startDate":"${#Project#currentDate}",
+"endDate":"${#Project#currentDate}",
+"projectId":${#Project#projectId},
+"versionId":${#Project#versionId}
+}</con:request><con:originalUri>https://prod-api.zephyr4jiracloud.com/connect/public/rest/api/1.0/cycle</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="a9db8a76-8051-43e8-87e9-2b7d6534ffa8" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="01390cd8-6f5b-4040-972f-5fbaa1f51b9c" name="Script Assertion - Store cycle id in property."><con:configuration><scriptText>import groovy.json.JsonSlurper
+def ResponseMessage = messageExchange.response.responseContent
+def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
+def cycleid= jsonSlurper.id
+
+context.testCase.testSuite.project.setPropertyValue('cycleid', cycleid.toString())</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>Authorization</con:entry><con:entry>zapiAccessKey</con:entry><con:entry>Content-Type</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="fcc999d2-39f2-4a6b-9319-c04a9869687b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Add Test to Cycle" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Generate JWT Token for Add Test in Cycle." id="44925cdb-4273-4c26-be70-3ab7df72d45a"><con:settings/><con:config><script>import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.net.URI;
+import java.net.URISyntaxException;
+
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.ParseException;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.util.EntityUtils;
+
+import com.thed.zephyr.cloud.rest.ZFJCloudRestClient;
+import com.thed.zephyr.cloud.rest.client.JwtGenerator;
+
+def site = context.expand( '${#Project#Site}' )
+def zapiAccessKey = context.expand( '${#Project#zapiAccessKey}' )
+def secretID = context.expand( '${#Project#secretID}' )
+def user = context.expand( '${#Project#user}' )
+def cycleID = context.expand( '${#Project#cycleid}' )
+
+            // Replace Zephyr BaseUrl with the &lt;ZAPI_CLOUD_URL> shared with ZAPI Cloud Installation
+            String zephyrBaseUrl = site;
+            // zephyr accessKey , we can get from Addons >> zapi section
+            String accessKey = zapiAccessKey;
+            // zephyr secretKey , we can get from Addons >> zapi section
+            String secretKey = secretID;
+            // Jira UserName
+            String userName = user;
+            
+            ZFJCloudRestClient client = ZFJCloudRestClient.restBuilder(zephyrBaseUrl, accessKey, secretKey, userName).build();
+            JwtGenerator jwtGenerator = client.getJwtGenerator();
+         
+            // API to which the JWT token has to be generated
+            String createCycleUri = zephyrBaseUrl + "/public/rest/api/1.0/executions/add/cycle/"+cycleID;
+        
+            URI uri = new URI(createCycleUri);
+            
+            int expirationInSec = 3600;
+            String jwt = jwtGenerator.generateJWT("POST", uri, expirationInSec);
+
+       	  log.info "JWT Token : " + jwt
+       	  context.testCase.testSuite.project.setPropertyValue('JWT_Token', jwt)
+
+            // Print the URL and JWT token to be used for making the REST call
+            // System.out.println("FINAL API : " +uri.toString());
+            //System.out.println("JWT Token : " +jwt);  
+</script></con:config></con:testStep><con:testStep type="restrequest" name="Add Test to Cycle" id="edc07b57-26e1-45a4-8766-9d2849e6ee12"><con:settings/><con:config service="https://prod-api.zephyr4jiracloud.com" resourcePath="/connect/public/rest/api/1.0/executions/add/cycle/${#Project#cycleid}" methodName="1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Add Test to Cycle" id="01d5eea6-19bb-4a16-9c84-16bd3684628e" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://prod-api.zephyr4jiracloud.com/</con:endpoint><con:request>{
+	"projectId":${#Project#projectId},
+	"versionId":${#Project#versionId},
+	"issues":["${#Project#issues}"],
+	"method":"1"
+}</con:request><con:originalUri>https://prod-api.zephyr4jiracloud.com/connect/public/rest/api/1.0/executions/add/cycle/0001516290602659-242ac112-0001</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="1b1fe7c9-5d74-4e44-934d-27be0507c40d" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="Authorization" value="${#Project#JWT_Token}"/>
+  <con:entry key="zapiAccessKey" value="${#Project#zapiAccessKey}"/>
+</con:parameters><con:parameterOrder><con:entry>Content-Type</con:entry><con:entry>Authorization</con:entry><con:entry>zapiAccessKey</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="9b82c902-4677-475b-a0a3-ffb853735f23" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Get Issue ID" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Get Issue ID" id="d19641d7-b14d-4942-9664-1c4d3cb38377"><con:settings/><con:config service="https://prod-api.zephyr4jiracloud.com" resourcePath="/rest/api/latest/issue/${#Project#issues}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get Issue ID" id="a4391818-75a5-4f5f-8526-78582f6c45c9" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://newapi.atlassian.net</con:endpoint><con:request/><con:originalUri>https://prod-api.zephyr4jiracloud.com/rest/api/latest/issue/NS-3</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="8df188ef-2e23-467c-adb0-1ef1b478b997" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="a3dcedcf-a3d5-4ce1-8462-0f2a010aed69" name="Script Assertion - Get issue id."><con:configuration><scriptText>import groovy.json.JsonSlurper
+def ResponseMessage = messageExchange.response.responseContent
+def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
+def issueid= jsonSlurper.id
+
+context.testCase.testSuite.project.setPropertyValue('issueID', issueid.toString())</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>Content-Type</con:entry><con:entry>Authorization</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="4a1de363-9569-48e5-9a89-94c346505192" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Get Execution ID" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Generate JWT Token for getting Execution ID." id="4c15378d-0883-4b47-a947-0608d17f6fd9"><con:settings/><con:config><script>import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.net.URI;
+import java.net.URISyntaxException;
+
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.ParseException;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.util.EntityUtils;
+
+import com.thed.zephyr.cloud.rest.ZFJCloudRestClient;
+import com.thed.zephyr.cloud.rest.client.JwtGenerator;
+
+def site = context.expand( '${#Project#Site}' )
+def zapiAccessKey = context.expand( '${#Project#zapiAccessKey}' )
+def secretID = context.expand( '${#Project#secretID}' )
+def user = context.expand( '${#Project#user}' )
+
+            // Replace Zephyr BaseUrl with the &lt;ZAPI_CLOUD_URL> shared with ZAPI Cloud Installation
+            String zephyrBaseUrl = site;
+            // zephyr accessKey , we can get from Addons >> zapi section
+            String accessKey = zapiAccessKey;
+            // zephyr secretKey , we can get from Addons >> zapi section
+            String secretKey = secretID;
+            // Jira UserName
+            String userName = user;
+            
+            ZFJCloudRestClient client = ZFJCloudRestClient.restBuilder(zephyrBaseUrl, accessKey, secretKey, userName).build();
+            JwtGenerator jwtGenerator = client.getJwtGenerator();
+         
+            // API to which the JWT token has to be generated
+            String createCycleUri = zephyrBaseUrl + "/public/rest/api/1.0/execution";
+        
+            URI uri = new URI(createCycleUri);
+            
+            int expirationInSec = 3600;
+            String jwt = jwtGenerator.generateJWT("POST", uri, expirationInSec);
+
+       	  log.info "JWT Token : " + jwt
+       	  context.testCase.testSuite.project.setPropertyValue('JWT_Token', jwt)
+
+            // Print the URL and JWT token to be used for making the REST call
+            // System.out.println("FINAL API : " +uri.toString());
+            //System.out.println("JWT Token : " +jwt);  
+</script></con:config></con:testStep><con:testStep type="restrequest" name="Get Execution ID." id="d1d58951-8079-4fcf-80e7-9b28f3564c52"><con:settings/><con:config service="https://prod-api.zephyr4jiracloud.com" resourcePath="/connect/public/rest/api/1.0/execution" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get Execution ID." id="04089324-5684-4016-9bc2-1d31e8e95842" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://prod-api.zephyr4jiracloud.com</con:endpoint><con:request>{
+	"status":{"id":"${#Project#Status}"},
+	"projectId":${#Project#projectId},
+	"issueId":${#Project#issueID},
+	"versionId":${#Project#versionId},
+	"cycleId":"${#Project#cycleid}",
+	"assigneeType":"currentUser"
+}</con:request><con:originalUri>https://prod-api.zephyr4jiracloud.com/connect/public/rest/api/1.0/execution</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="965eba93-7d6c-4a2c-a626-e8d55e3732a5" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="768fcc1d-c956-434b-a604-21c1cf5f2649" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper
+def ResponseMessage = messageExchange.response.responseContent
+def jsonSlurper = new JsonSlurper().parseText(ResponseMessage)
+def executionid= jsonSlurper.execution.id
+log.info jsonSlurper.execution.id
+context.testCase.testSuite.project.setPropertyValue('executionid', executionid.toString())</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>Authorization</con:entry><con:entry>zapiAccessKey</con:entry><con:entry>Content-Type</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="3f2281bd-8ad5-4adf-af96-0c38c141d982" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Execute TestCase in JIRA." searchProperties="true"><con:settings/><con:testStep type="groovy" name="Generate JWT Token for Execute TestCase in JIRA." id="907fcdf0-84c6-456c-816a-a890b5e21bdf"><con:settings/><con:config><script>import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.net.URI;
+import java.net.URISyntaxException;
+
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.ParseException;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.util.EntityUtils;
+
+import com.thed.zephyr.cloud.rest.ZFJCloudRestClient;
+import com.thed.zephyr.cloud.rest.client.JwtGenerator;
+
+def site = context.expand( '${#Project#Site}' )
+def zapiAccessKey = context.expand( '${#Project#zapiAccessKey}' )
+def secretID = context.expand( '${#Project#secretID}' )
+def user = context.expand( '${#Project#user}' )
+def executionID = context.expand( '${#Project#executionid}' )
+
+            // Replace Zephyr BaseUrl with the &lt;ZAPI_CLOUD_URL> shared with ZAPI Cloud Installation
+            String zephyrBaseUrl = site;
+            // zephyr accessKey , we can get from Addons >> zapi section
+            String accessKey = zapiAccessKey;
+            // zephyr secretKey , we can get from Addons >> zapi section
+            String secretKey = secretID;
+            // Jira UserName
+            String userName = user;
+            
+            ZFJCloudRestClient client = ZFJCloudRestClient.restBuilder(zephyrBaseUrl, accessKey, secretKey, userName).build();
+            JwtGenerator jwtGenerator = client.getJwtGenerator();
+         
+            // API to which the JWT token has to be generated
+            String createCycleUri = zephyrBaseUrl + "/public/rest/api/1.0/execution/"+executionID;
+        
+            URI uri = new URI(createCycleUri);
+            
+            int expirationInSec = 3600;
+            String jwt = jwtGenerator.generateJWT("PUT", uri, expirationInSec);
+
+       	  log.info "JWT Token : " + jwt
+       	  context.testCase.testSuite.project.setPropertyValue('JWT_Token', jwt)
+
+            // Print the URL and JWT token to be used for making the REST call
+            // System.out.println("FINAL API : " +uri.toString());
+            //System.out.println("JWT Token : " +jwt);  
+</script></con:config></con:testStep><con:testStep type="restrequest" name="Execute TestCase in JIRA." id="4afd1a54-701a-4ce9-a915-afb52bdcad62"><con:settings/><con:config service="https://prod-api.zephyr4jiracloud.com" resourcePath="/connect/public/rest/api/1.0/execution/${#Project#executionid}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Execute TestCase in JIRA." id="182d8512-97bb-486e-b49b-a27ea9bb3053" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://prod-api.zephyr4jiracloud.com</con:endpoint><con:request>{
+	"status":{"id":"${#Project#Status}"},
+	"projectId":${#Project#projectId},
+	"issueId":${#Project#issueID},
+	"cycleId":"${#Project#cycleid}",
+	"versionId":${#Project#versionId},
+	"comment":"Test Execution Done.",
+	"assigneeType":"currentUser"
+}</con:request><con:originalUri>https://prod-api.zephyr4jiracloud.com/connect/public/rest/api/1.0/execution/0001516298420566-242ac112-0001</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="f789ac04-aee6-4d32-91fb-2a9780fd2c1b" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="Authorization" value="${#Project#JWT_Token}"/>
+  <con:entry key="zapiAccessKey" value="${#Project#zapiAccessKey}"/>
+</con:parameters><con:parameterOrder><con:entry>Content-Type</con:entry><con:entry>Authorization</con:entry><con:entry>zapiAccessKey</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite id="50cea069-5c40-45b6-ad35-e02fba09a348" name="Enterprise TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="855a7857-c2b4-422f-bc73-d87885f85216" failOnError="false" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Call Create Cycle" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword=""><con:settings/><con:testStep type="calltestcase" name="Run Create Cycle" id="c9e7fa4c-3ab7-452e-9898-261bd3184ab0"><con:settings/><con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:targetTestCase>5701247b-46ea-4062-ac5c-b516088a678b</con:targetTestCase><con:properties/><con:returnProperties/><con:runMode>PARALLELL</con:runMode></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="1f9a9d94-b4d4-4689-96fd-3d191778e962" failOnError="false" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="NS-2 Verify that systeminfo api working correctly." searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword=""><con:settings/><con:testStep type="restrequest" name="Pass Test Case system info" id="92700d17-0924-4d9a-949f-bdec05bfdf53"><con:settings/><con:config service="https://prod-api.zephyr4jiracloud.com" resourcePath="/api/systeminfo" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Pass Test Case system info" id="031daff4-c6e9-433f-bb31-4790a243fddc" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://qa.condecodev.com</con:endpoint><con:request/><con:originalUri>https://qa.condecodev.com/api/systeminfo</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="9cb8f973-845b-4005-bd00-6ac6118338c0" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="18a64d5a-3b1d-407d-922e-af4749985fa2" name="Script Assertion"><con:configuration><scriptText>def header = messageExchange.getResponseHeaders()
+def status =  header["#status#"]
+log.info status[0]
+if( status[0] == "HTTP/1.1 200 OK")
+{
+	//Set 1 for Pass testcase
+	context.testCase.testSuite.project.setPropertyValue('Status', "1")
+}
+else
+{
+	//Set 2 for Fail testcase
+	context.testCase.testSuite.project.setPropertyValue('Status', "2")
+}
+
+//Pass JIRA testcase ID to the API
+context.testCase.testSuite.project.setPropertyValue('issues', "NS-2")</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="calltestcase" name="Run Add Test" id="c80d4c51-19e1-40e8-8896-c108b2fc35f0"><con:settings/><con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:targetTestCase>fcc999d2-39f2-4a6b-9319-c04a9869687b</con:targetTestCase><con:properties/><con:returnProperties/><con:runMode>PARALLELL</con:runMode></con:config></con:testStep><con:testStep type="calltestcase" name="Run Get Issue ID" id="c4bfc964-c4ba-4f51-896c-a735b4dad3e5"><con:settings/><con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:targetTestCase>9b82c902-4677-475b-a0a3-ffb853735f23</con:targetTestCase><con:properties/><con:returnProperties/><con:runMode>PARALLELL</con:runMode></con:config></con:testStep><con:testStep type="calltestcase" name="Run Get Execution ID" id="e0cdbbca-0330-4380-812a-29b3bc40a894"><con:settings/><con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:targetTestCase>4a1de363-9569-48e5-9a89-94c346505192</con:targetTestCase><con:properties/><con:returnProperties/><con:runMode>PARALLELL</con:runMode></con:config></con:testStep><con:testStep type="calltestcase" name="Run Execute test Case" id="a9eda7d8-e25e-4b0b-a4be-d2fe4078bf8f"><con:settings/><con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:targetTestCase>3f2281bd-8ad5-4adf-af96-0c38c141d982</con:targetTestCase><con:properties/><con:returnProperties/><con:runMode>PARALLELL</con:runMode></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="c8520475-1dad-45f6-bfca-ca03f6965223" failOnError="false" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="NS-1 Failed systeminfo_api" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword=""><con:settings/><con:testStep type="restrequest" name="Failed test case system info" id="337ec702-0e5f-4727-9261-5024b7327493"><con:settings/><con:config service="https://prod-api.zephyr4jiracloud.com" resourcePath="/api/systeminfo1" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Failed test case system info" id="031daff4-c6e9-433f-bb31-4790a243fddc" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://qa.condecodev.com</con:endpoint><con:request/><con:originalUri>https://qa.condecodev.com/api/systeminfo</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="9cb8f973-845b-4005-bd00-6ac6118338c0" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="18a64d5a-3b1d-407d-922e-af4749985fa2" name="Script Assertion"><con:configuration><scriptText>def header = messageExchange.getResponseHeaders()
+def status =  header["#status#"]
+log.info status[0]
+if( status[0] == "HTTP/1.1 200 OK")
+{
+	//Set 1 for Pass testcase
+	context.testCase.testSuite.project.setPropertyValue('Status', "1")
+}
+else
+{
+	//Set 2 for Fail testcase
+	context.testCase.testSuite.project.setPropertyValue('Status', "2")
+}
+
+//Pass JIRA testcase ID to the API
+context.testCase.testSuite.project.setPropertyValue('issues', "NS-1")</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="calltestcase" name="Run Add Test" id="bce33411-e86f-486d-a9e0-fca7f20b2b12"><con:settings/><con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:targetTestCase>fcc999d2-39f2-4a6b-9319-c04a9869687b</con:targetTestCase><con:properties/><con:returnProperties/><con:runMode>PARALLELL</con:runMode></con:config></con:testStep><con:testStep type="calltestcase" name="Run Get Issue ID" id="00264f00-ff11-4d55-b089-b12dc966fa12"><con:settings/><con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:targetTestCase>9b82c902-4677-475b-a0a3-ffb853735f23</con:targetTestCase><con:properties/><con:returnProperties/><con:runMode>PARALLELL</con:runMode></con:config></con:testStep><con:testStep type="calltestcase" name="Run Get Execution ID" id="5763042e-c0a6-42a2-80b9-64de269935b2"><con:settings/><con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:targetTestCase>4a1de363-9569-48e5-9a89-94c346505192</con:targetTestCase><con:properties/><con:returnProperties/><con:runMode>PARALLELL</con:runMode></con:config></con:testStep><con:testStep type="calltestcase" name="Run Execute test Case" id="4e5206d1-99e2-447e-80df-ed96dba340ee"><con:settings/><con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:targetTestCase>3f2281bd-8ad5-4adf-af96-0c38c141d982</con:targetTestCase><con:properties/><con:returnProperties/><con:runMode>PARALLELL</con:runMode></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>Site</con:name><con:value>https://prod-api.zephyr4jiracloud.com/connect</con:value></con:property><con:property><con:name>JWT_Token</con:name><con:value>JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInFzaCI6ImRjOGUzNzA2OWVkZmIxNGM1MDZlZTQ3ZTFjNDQ4MGI1MmQxMDU4ZTQ0ZTI4NGEyMDc5YTMwNTczNmQyNDlhMGIiLCJpc3MiOiJaR0l4WTJNMVpEZ3RaVE15Tnkwek5tWTRMVGxoWlRrdFltWTNNR1ZpWmpFNVl6TTBJR0ZrYldsdUlHRmtiV2x1IiwiZXhwIjoxNTE2MzY5Njk3LCJpYXQiOjE1MTYzNjYwOTd9.e_bbaADzyAGx1EIyOPgZU5o_ddVsi_G5Gnj3aH_TaTM</con:value></con:property><con:property><con:name>zapiAccessKey</con:name><con:value>***</con:value></con:property><con:property><con:name>secretID</con:name><con:value>***</con:value></con:property><con:property><con:name>user</con:name><con:value>admin</con:value></con:property><con:property><con:name>TestCycleName</con:name><con:value>Test Cycle Hackathon</con:value></con:property><con:property><con:name>BuildNumber</con:name><con:value>3.4.5</con:value></con:property><con:property><con:name>EnvironmentName</con:name><con:value>qa.condecodev.com</con:value></con:property><con:property><con:name>currentDate</con:name><con:value>1516363998075</con:value></con:property><con:property><con:name>projectId</con:name><con:value>10000</con:value></con:property><con:property><con:name>versionId</con:name><con:value>-1</con:value></con:property><con:property><con:name>cycleid</con:name><con:value>0001516363999283-242ac112-0001</con:value></con:property><con:property><con:name>executionid</con:name><con:value>0001516364030348-242ac112-0001</con:value></con:property><con:property><con:name>issues</con:name><con:value>NS-1</con:value></con:property><con:property><con:name>issueID</con:name><con:value>10000</con:value></con:property><con:property><con:name>Status</con:name><con:value>2</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
